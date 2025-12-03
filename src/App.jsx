@@ -4,6 +4,7 @@ import Titulo from './Titulo';
 import InputPalabra from './InputPalabra';
 import InputSignificado from './InputSignificado';
 import BotonGuardar from './BotonGuardar';
+import PalabrasGuardadas from './PalabrasGuardadas';
 
 function App() {
 
@@ -38,31 +39,11 @@ function App() {
       
       <hr />
       
-      <h3>Palabras Guardadas</h3>
-      <ul>
-        {lista.map((item, index) => (
-          <li 
-            key={index}
-            onClick={() => {
-              if (seleccionado === item) {
-                setSeleccionado(null);
-              } else {
-                setSeleccionado(item);
-              }
-            }}
-            style={{ cursor: "pointer", marginBottom: "8px" }}
-          >
-            {item.palabra}
-          </li>
-        ))}
-      </ul>
-
-      {seleccionado && (
-        <div>
-          <h3>Significado:</h3>
-          <p>{seleccionado.significado}</p>
-        </div>
-      )}
+      <PalabrasGuardadas
+        lista={lista}
+        seleccionado={seleccionado}
+        setSeleccionado={setSeleccionado}
+      />
     </div>
   )
 }

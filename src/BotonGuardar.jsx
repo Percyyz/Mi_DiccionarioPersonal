@@ -3,7 +3,7 @@ import './BotonGuardar.css'
 
 function BotonGuardar() {
   return (
-    <button>Guardar</button>
+    <button>Guarda La Palabra a tu Diccionario</button>
   )
 }
 

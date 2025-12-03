@@ -1,8 +1,7 @@
  .principal {
   margin: auto;
-  background-color: aqua;
-  width: 75%;
-  padding-bottom: 10px;
+  background-color: rgb(250, 210, 179);
+    padding-bottom: 10px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px 1px gray;
  }

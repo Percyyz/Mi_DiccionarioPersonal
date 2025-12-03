@@ -4,6 +4,11 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    background-color: dodgerblue;
+    background: #457bff;
+    color: white;
     cursor: pointer;
+    margin-top: 15px;
+}
+button:hover {
+    background: #3462cc;
 }
