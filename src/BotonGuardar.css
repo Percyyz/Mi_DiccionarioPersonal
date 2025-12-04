@@ -3,12 +3,13 @@ button {
     display: block;
     padding: 10px 20px;
     border-radius: 5px;
-    border: none;
-    background: #0004fd;
+    border: white solid 1px;
+    background: transparent;
     color: white;
     cursor: pointer;
     margin-top: 15px;
 }
 button:hover {
-    background: #0b73fb;
+    background: #ffffff;
+    color: black;
 }
