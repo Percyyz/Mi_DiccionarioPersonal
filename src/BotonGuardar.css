@@ -4,11 +4,11 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    background: #457bff;
+    background: #0004fd;
     color: white;
     cursor: pointer;
     margin-top: 15px;
 }
 button:hover {
-    background: #3462cc;
+    background: #0b73fb;
 }

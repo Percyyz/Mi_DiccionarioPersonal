@@ -15,6 +15,11 @@ function App() {
 
   const [seleccionado, setSeleccionado]=useState(null);
 
+  const eliminarPalabra = (index) => {
+  setLista(lista.filter((_, i) => i !== index));
+  setSeleccionado(null); // para cerrar el panel si se elimina
+};
+
   const guardarPalabra=()=>{
     const palabra=palabraRef.current.value;
     const significado=significadoRef.current.value;
@@ -43,6 +48,7 @@ function App() {
         lista={lista}
         seleccionado={seleccionado}
         setSeleccionado={setSeleccionado}
+        eliminarPalabra={eliminarPalabra}
       />
     </div>
   )
